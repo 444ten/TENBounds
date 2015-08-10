@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3A9E5994-E014-45D3-AA51-A60D6267BD78</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>466D6B38317851173FE36BEA1FA67C58C2ECC8BE</key>
+		<string>https://github.com/444ten/TENBounds.git</string>
+		<key>B33840DF3B45EB56164150B5890E772D2CE18D0A</key>
+		<string>https://github.com/444ten/444tenFB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TENBounds.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>466D6B38317851173FE36BEA1FA67C58C2ECC8BE</key>
+		<string>../..</string>
+		<key>B33840DF3B45EB56164150B5890E772D2CE18D0A</key>
+		<string>../../../../../444tenFB</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/444ten/TENBounds.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>466D6B38317851173FE36BEA1FA67C58C2ECC8BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B33840DF3B45EB56164150B5890E772D2CE18D0A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>444tenFB</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>466D6B38317851173FE36BEA1FA67C58C2ECC8BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TENBounds</string>
+		</dict>
+	</array>
+</dict>
+</plist>

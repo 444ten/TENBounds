@@ -22,6 +22,8 @@
 		76F79D6A1B78946F00B5D5EF /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D691B78946F00B5D5EF /* map.jpg */; };
 		76F79D6F1B78CFFA00B5D5EF /* TENConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F79D6D1B78CFFA00B5D5EF /* TENConstraintsViewController.m */; };
 		76F79D701B78CFFA00B5D5EF /* TENConstraintsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D6E1B78CFFA00B5D5EF /* TENConstraintsViewController.xib */; };
+		76F79D741B78F10800B5D5EF /* TENHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F79D731B78F10800B5D5EF /* TENHeaderView.m */; };
+		76F79D761B78F11B00B5D5EF /* TENHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D751B78F11B00B5D5EF /* TENHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		76F79D6C1B78CFFA00B5D5EF /* TENConstraintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENConstraintsViewController.h; sourceTree = "<group>"; };
 		76F79D6D1B78CFFA00B5D5EF /* TENConstraintsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENConstraintsViewController.m; sourceTree = "<group>"; };
 		76F79D6E1B78CFFA00B5D5EF /* TENConstraintsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TENConstraintsViewController.xib; sourceTree = "<group>"; };
+		76F79D721B78F10800B5D5EF /* TENHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENHeaderView.h; sourceTree = "<group>"; };
+		76F79D731B78F10800B5D5EF /* TENHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENHeaderView.m; sourceTree = "<group>"; };
+		76F79D751B78F11B00B5D5EF /* TENHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TENHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +219,7 @@
 		76F79D5D1B78813800B5D5EF /* TENBoundsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				76F79D711B78F0EE00B5D5EF /* TENHeaderView */,
 				76F79D5E1B78815100B5D5EF /* TENBoundsViewController.h */,
 				76F79D5F1B78815100B5D5EF /* TENBoundsViewController.m */,
 				76F79D601B78815100B5D5EF /* TENBoundsViewController.xib */,
@@ -239,6 +245,16 @@
 				76F79D6E1B78CFFA00B5D5EF /* TENConstraintsViewController.xib */,
 			);
 			path = TENConstraintsViewController;
+			sourceTree = "<group>";
+		};
+		76F79D711B78F0EE00B5D5EF /* TENHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				76F79D721B78F10800B5D5EF /* TENHeaderView.h */,
+				76F79D731B78F10800B5D5EF /* TENHeaderView.m */,
+				76F79D751B78F11B00B5D5EF /* TENHeaderView.xib */,
+			);
+			path = TENHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +340,7 @@
 				76F79D621B78815100B5D5EF /* TENBoundsViewController.xib in Resources */,
 				76F79ADB1B787D1F00B5D5EF /* LaunchScreen.xib in Resources */,
 				76F79AD81B787D1F00B5D5EF /* Images.xcassets in Resources */,
+				76F79D761B78F11B00B5D5EF /* TENHeaderView.xib in Resources */,
 				76F79D681B788F6700B5D5EF /* TENPictureViewController.xib in Resources */,
 				76F79D701B78CFFA00B5D5EF /* TENConstraintsViewController.xib in Resources */,
 				76F79D6A1B78946F00B5D5EF /* map.jpg in Resources */,
@@ -351,6 +368,7 @@
 				76F79D4A1B787FD600B5D5EF /* TENMacro.m in Sources */,
 				76F79D671B788F6700B5D5EF /* TENPictureViewController.m in Sources */,
 				76F79ACD1B787D1F00B5D5EF /* main.m in Sources */,
+				76F79D741B78F10800B5D5EF /* TENHeaderView.m in Sources */,
 				76F79D6F1B78CFFA00B5D5EF /* TENConstraintsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

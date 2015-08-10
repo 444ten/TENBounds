@@ -40,7 +40,7 @@ static const CGFloat        TENTableOffset      = 100;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [UITableViewCell new];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell number %ld", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell number %d", indexPath.row];
     
     return cell;
 }
