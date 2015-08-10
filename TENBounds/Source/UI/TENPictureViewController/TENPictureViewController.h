@@ -11,6 +11,8 @@
 @interface TENPictureViewController : UIViewController
 @property (nonatomic, strong)   IBOutlet UIImageView    *mapImageView;
 @property (nonatomic, strong)   IBOutlet UIView         *yellowView;
+@property (nonatomic, strong)   IBOutlet UIScrollView   *scrollView;
+@property (nonatomic, strong)   IBOutlet UIView         *redView;
 
 
 @end
