@@ -8,11 +8,27 @@
 
 #import "TENBoundsViewController.h"
 
+static const NSTimeInterval TENAnimateDuration  = 0.5;
+static const CGFloat        TENTableOffset      = 100;
+
 @interface TENBoundsViewController ()
 
 @end
 
 @implementation TENBoundsViewController
+
+#pragma mark -
+#pragma mark Interface Handling
+
+- (IBAction)onUpButton:(id)sender {
+    CGRect bounds = self.tableView.bounds;
+    bounds.origin.y += TENTableOffset;
+
+    [UIView animateWithDuration:TENAnimateDuration
+                     animations:^{
+                         self.tableView.bounds = bounds;
+                     }];
+}
 
 #pragma mark -
 #pragma mark UITableViewDataSource

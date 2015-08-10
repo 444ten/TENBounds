@@ -12,6 +12,7 @@
 #import "UIViewController+TENExtensions.h"
 
 #import "TENBoundsViewController.h"
+#import "TENPictureViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
     UIWindow *window = [UIWindow window];
     self.window = window;
     
-    TENBoundsViewController *controller = [TENBoundsViewController controller];
+//    TENBoundsViewController *controller = [TENBoundsViewController controller];
+    TENPictureViewController *controller = [TENPictureViewController controller];
     
     window.rootViewController = controller;
     

@@ -17,6 +17,9 @@
 		76F79D4A1B787FD600B5D5EF /* TENMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F79CE21B787FD600B5D5EF /* TENMacro.m */; };
 		76F79D611B78815100B5D5EF /* TENBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F79D5F1B78815100B5D5EF /* TENBoundsViewController.m */; };
 		76F79D621B78815100B5D5EF /* TENBoundsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D601B78815100B5D5EF /* TENBoundsViewController.xib */; };
+		76F79D671B788F6700B5D5EF /* TENPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F79D651B788F6700B5D5EF /* TENPictureViewController.m */; };
+		76F79D681B788F6700B5D5EF /* TENPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D661B788F6700B5D5EF /* TENPictureViewController.xib */; };
+		76F79D6A1B78946F00B5D5EF /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76F79D691B78946F00B5D5EF /* map.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		76F79D5E1B78815100B5D5EF /* TENBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENBoundsViewController.h; sourceTree = "<group>"; };
 		76F79D5F1B78815100B5D5EF /* TENBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENBoundsViewController.m; sourceTree = "<group>"; };
 		76F79D601B78815100B5D5EF /* TENBoundsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TENBoundsViewController.xib; sourceTree = "<group>"; };
+		76F79D641B788F6700B5D5EF /* TENPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENPictureViewController.h; sourceTree = "<group>"; };
+		76F79D651B788F6700B5D5EF /* TENPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENPictureViewController.m; sourceTree = "<group>"; };
+		76F79D661B788F6700B5D5EF /* TENPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TENPictureViewController.xib; sourceTree = "<group>"; };
+		76F79D691B78946F00B5D5EF /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 		76F79ACA1B787D1F00B5D5EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76F79D691B78946F00B5D5EF /* map.jpg */,
 				76F79ACB1B787D1F00B5D5EF /* Info.plist */,
 				76F79ACC1B787D1F00B5D5EF /* main.m */,
 			);
@@ -191,6 +199,7 @@
 		76F79D5C1B78810D00B5D5EF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				76F79D631B788F3800B5D5EF /* TENPictureViewController */,
 				76F79D5D1B78813800B5D5EF /* TENBoundsViewController */,
 			);
 			path = UI;
@@ -204,6 +213,16 @@
 				76F79D601B78815100B5D5EF /* TENBoundsViewController.xib */,
 			);
 			path = TENBoundsViewController;
+			sourceTree = "<group>";
+		};
+		76F79D631B788F3800B5D5EF /* TENPictureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76F79D641B788F6700B5D5EF /* TENPictureViewController.h */,
+				76F79D651B788F6700B5D5EF /* TENPictureViewController.m */,
+				76F79D661B788F6700B5D5EF /* TENPictureViewController.xib */,
+			);
+			path = TENPictureViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +308,8 @@
 				76F79D621B78815100B5D5EF /* TENBoundsViewController.xib in Resources */,
 				76F79ADB1B787D1F00B5D5EF /* LaunchScreen.xib in Resources */,
 				76F79AD81B787D1F00B5D5EF /* Images.xcassets in Resources */,
+				76F79D681B788F6700B5D5EF /* TENPictureViewController.xib in Resources */,
+				76F79D6A1B78946F00B5D5EF /* map.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +332,7 @@
 				76F79D611B78815100B5D5EF /* TENBoundsViewController.m in Sources */,
 				76F79D191B787FD600B5D5EF /* UIViewController+TENExtensions.m in Sources */,
 				76F79D4A1B787FD600B5D5EF /* TENMacro.m in Sources */,
+				76F79D671B788F6700B5D5EF /* TENPictureViewController.m in Sources */,
 				76F79ACD1B787D1F00B5D5EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
