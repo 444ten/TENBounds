@@ -10,5 +10,7 @@
 
 @interface TENPictureViewController : UIViewController
 @property (nonatomic, strong)   IBOutlet UIImageView    *mapImageView;
+@property (nonatomic, strong)   IBOutlet UIView         *yellowView;
+
 
 @end

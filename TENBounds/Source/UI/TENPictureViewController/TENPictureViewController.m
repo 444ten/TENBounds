@@ -8,30 +8,43 @@
 
 #import "TENPictureViewController.h"
 
+static const CGFloat TENDefaultOffset   = 100;
+
 @interface TENPictureViewController ()
+
+- (void)changeBoundsX:(CGFloat)offsetX boundsY:(CGFloat)offsetY;
 
 @end
 
 @implementation TENPictureViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+#pragma mark -
+#pragma mark Interface Handling
+
+- (IBAction)onUpButton:(id)sender {
+    [self changeBoundsX:0 boundsY:TENDefaultOffset];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onDownButton:(id)sender {
+    [self changeBoundsX:0 boundsY:-TENDefaultOffset];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark -
+#pragma mark Private
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)changeBoundsX:(CGFloat)offsetX boundsY:(CGFloat)offsetY {
+    UIView *view = self.yellowView;
+    
+//    CGRect frame = view.frame;
+    CGRect bounds = view.bounds;
+
+    bounds.origin.x += offsetX;
+    bounds.origin.y += offsetY;
+    self.yellowView.bounds = bounds;
+    
+    NSLog(@"frame = %@", NSStringFromCGRect(self.yellowView.frame));
+    NSLog(@"bounds = %@", NSStringFromCGRect(self.yellowView.bounds));
+    
 }
-*/
 
 @end
