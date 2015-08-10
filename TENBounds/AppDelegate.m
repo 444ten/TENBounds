@@ -8,15 +8,27 @@
 
 #import "AppDelegate.h"
 
+#import "UIWindow+TENExtensions.h"
+#import "UIViewController+TENExtensions.h"
+
+#import "TENBoundsViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *window = [UIWindow window];
+    self.window = window;
+    
+    TENBoundsViewController *controller = [TENBoundsViewController controller];
+    
+    window.rootViewController = controller;
+    
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 
