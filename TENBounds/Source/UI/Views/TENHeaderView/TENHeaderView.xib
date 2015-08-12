@@ -23,8 +23,8 @@
                         <constraint firstAttribute="trailing" secondItem="C3z-6v-54t" secondAttribute="trailing" id="ER7-kF-4vE"/>
                         <constraint firstItem="C3z-6v-54t" firstAttribute="top" secondItem="SJM-ui-YcD" secondAttribute="top" id="Ivh-69-l1l"/>
                         <constraint firstAttribute="bottom" secondItem="C3z-6v-54t" secondAttribute="bottom" id="cn2-mt-bbg"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="dGv-xH-M4X"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="pag-QD-rQT"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="dGv-xH-M4X"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="pag-QD-rQT"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">

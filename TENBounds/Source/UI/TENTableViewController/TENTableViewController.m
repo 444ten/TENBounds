@@ -13,6 +13,7 @@
 #import "TENHeaderView.h"
 
 @interface TENTableViewController ()
+@property (nonatomic, assign)   CGFloat headerViewHeight;
 
 @end
 
@@ -28,7 +29,7 @@
     TENHeaderView *result = (TENHeaderView *)table.tableHeaderView;
     if (nil == result) {
         result = [NSBundle loadNibWithClass:[TENHeaderView class]];
-//        table.tableHeaderView = result;
+        table.tableHeaderView = result;
     }
     
     return result;
@@ -40,18 +41,24 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    CGRect bounds = self.view.bounds;
+    CGFloat height = bounds.size.height / 2;
+    
+    self.headerViewHeight = height;
+    
+    TENHeaderView *headerView = self.headerView;
+    headerView.imageViewHeight.constant = height;
+    headerView.lessImageViewHeight.constant = height;
+    [headerView updateConstraintsIfNeeded];
+
+    [headerView updateFrame];
+//    [headerView layoutIfNeeded];
     
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-
-    TENHeaderView *headerView = self.headerView;
-    [headerView updateFrame];
-    [headerView updateConstraintsIfNeeded];
-    [headerView layoutIfNeeded];
     
-
 }
 
 #pragma mark -
@@ -80,10 +87,9 @@
     return UITableViewAutomaticDimension;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return UITableViewAutomaticDimension;
-//}
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
 
 #pragma mark -
 #pragma mark UIScrollViewDelegate
@@ -100,7 +106,7 @@
         headerView.lessImageViewHeight.active = YES;
     }
 
-    if (offsetY < 150) {
+    if (offsetY < self.headerViewHeight / 2) {
         headerView.imageViewVerticalOffset.constant = tableView.contentOffset.y;
         [headerView updateConstraintsIfNeeded];
         [headerView layoutIfNeeded];
@@ -110,12 +116,11 @@
 - (void)scrollViewDidEndDragging:(UITableView *)tableView willDecelerate:(BOOL)decelerate {
     CGFloat offsetY = tableView.contentOffset.y;
     
-    if (offsetY > 0 && offsetY < 150) {
+    if (offsetY > 0 && offsetY < self.headerViewHeight / 2) {
         [UIView animateWithDuration:0.3 animations:^{
             self.tableView.contentOffset = CGPointZero;
         }];
     }
 }
-
 
 @end
