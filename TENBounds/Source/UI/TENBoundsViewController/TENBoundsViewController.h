@@ -8,7 +8,11 @@
 
 #import "UIViewController+TENExtensions.h"
 
+@class TENHeaderView;
+
 @interface TENBoundsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)   IBOutlet UITableView    *tableView;
+
+@property (nonatomic, readonly) TENHeaderView   *headerView;
 
 @end

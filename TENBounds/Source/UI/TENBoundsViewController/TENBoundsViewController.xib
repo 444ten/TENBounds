@@ -15,33 +15,16 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Vv-8J-Q9I">
-                    <rect key="frame" x="0.0" y="51" width="600" height="549"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Vv-8J-Q9I">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="W4j-cd-jUY"/>
                         <outlet property="delegate" destination="-1" id="HVq-mb-ZPg"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWx-tL-Kb5">
-                    <rect key="frame" x="519" y="13" width="30" height="30"/>
-                    <state key="normal" title="Up">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onUpButton:" destination="-1" eventType="touchUpInside" id="TnH-8m-7cA"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="3Vv-8J-Q9I" secondAttribute="trailing" id="PBI-Rg-RbM"/>
-                <constraint firstItem="3Vv-8J-Q9I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q3b-Lr-cRK"/>
-                <constraint firstAttribute="bottom" secondItem="3Vv-8J-Q9I" secondAttribute="bottom" id="RIZ-Xp-4MN"/>
-                <constraint firstItem="YWx-tL-Kb5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="VTu-A3-SDR"/>
-                <constraint firstItem="3Vv-8J-Q9I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="hr3-MR-fhr"/>
-                <constraint firstAttribute="trailing" secondItem="YWx-tL-Kb5" secondAttribute="trailing" constant="51" id="oul-7Q-ckz"/>
-            </constraints>
             <point key="canvasLocation" x="333" y="374"/>
         </view>
     </objects>

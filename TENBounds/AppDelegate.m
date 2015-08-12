@@ -14,6 +14,7 @@
 #import "TENBoundsViewController.h"
 #import "TENPictureViewController.h"
 #import "TENConstraintsViewController.h"
+#import "TENTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,9 +28,9 @@
     
 //    TENBoundsViewController *controller = [TENBoundsViewController controller];
 //    TENPictureViewController *controller = [TENPictureViewController controller];
-  
-    TENConstraintsViewController *controller = [TENConstraintsViewController controller];
-    
+//    TENConstraintsViewController *controller = [TENConstraintsViewController controller];
+    TENTableViewController *controller = [TENTableViewController controller];
+
     window.rootViewController = controller;
     
     [window makeKeyAndVisible];
